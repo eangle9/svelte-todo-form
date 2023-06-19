@@ -47,11 +47,7 @@
   <Tabs {activeTab} {tabs} on:todo={handleTodo} />
 
   {#if activeTab === "Todo List"}
-    <div class="todo">
-      {#each todos as todo (todo.id)}
-        <TodoList {todo} on:vote={handleVote} />
-      {/each}
-    </div>
+        <TodoList {todos} on:vote={handleVote} />
   {:else if activeTab === "Todo Form"}
     <TodoForm on:addtodo={handleAddTodo} />
   {/if}
@@ -63,9 +59,9 @@
     max-width: 940px;
     margin: 0 auto;
   }
-  .todo {
+  /* .todo {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
-  }
+  } */
 </style>

@@ -15,13 +15,13 @@
     }
     if (fields.answerA.trim().length < 1) {
       valid = false;
-      errors.answerA = "answer is required";
+      errors.answerA = "answer A is required";
     } else {
       errors.answerA = "";
     }
     if (fields.answerB.trim().length < 1) {
       valid = false;
-      errors.answerB = "answer is required";
+      errors.answerB = "answer B is required";
     } else {
       errors.answerB = "";
     }
